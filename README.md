@@ -1,5 +1,5 @@
 Image Denoising and Reconstruction Using Autoencoders
-1. Project Overview
+**1. Project Overview**
 
 This project implements an image denoising autoencoder using TensorFlow and Keras. The model is trained to reconstruct clean images from corrupted inputs. Multiple types of synthetic distortions are applied to the training data to simulate real-world image degradation.
 
@@ -17,7 +17,7 @@ Analyze the effect of the loss function on output sharpness
 
 Understand why blurring occurs in autoencoder outputs
 
-3. Methodology
+**3. Methodology**
 3.1 Autoencoder Architecture
 
 The model consists of:
@@ -26,13 +26,13 @@ Encoder
 
 Input layer matching image dimensions
 
-Fully connected (Dense) layers
+Convolutional layers
 
 Compression into a latent representation
 
 Decoder
 
-Dense layers
+UpSample layers
 
 Reshaping to original image shape
 
@@ -44,7 +44,7 @@ Optimizer: Adam
 
 Loss function: Mean Squared Error (MSE)
 
-4. Image Corruption Pipeline
+**4. Image Corruption Pipeline**
 
 Training images are artificially degraded before being fed to the network. The applied corruptions include:
 
@@ -66,7 +66,7 @@ Each RGB channel is scaled independently using random factors within a controlle
 
 All pixel values are clipped to the valid range [0, 1] after corruption.
 
-5. Experimental Observations
+**5. Experimental Observations**
 5.1 Reconstruction Performance
 
 The trained autoencoder is capable of:
@@ -99,19 +99,15 @@ MSE loss tends to produce smoother outputs.
 
 Fine textures and sharp edges may not be fully reconstructed.
 
-7. Possible Improvements
+**7. Possible Improvements**
 
 Future enhancements may include:
-
-Replacing MSE with Mean Absolute Error (MAE)
-
-Using a convolutional autoencoder instead of fully connected layers
 
 Introducing skip connections (U-Net style architecture)
 
 Using perceptual or SSIM-based loss functions
 
-8. Requirements
+**8. Requirements**
 
 Python 3.x
 
