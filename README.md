@@ -1,4 +1,5 @@
 **Image Denoising and Reconstruction Using Autoencoders**
+
 **1. Project Overview**
 
 This project implements an image denoising autoencoder using TensorFlow and Keras. The model is trained to reconstruct clean images from corrupted inputs. Multiple types of synthetic distortions are applied to the training data to simulate real-world image degradation.
