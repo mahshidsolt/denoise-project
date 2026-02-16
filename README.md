@@ -6,7 +6,7 @@ This project implements an image denoising autoencoder using TensorFlow and Kera
 
 The goal of the project is to explore how autoencoders learn image reconstruction and to analyze reconstruction artifacts such as smoothing and loss of fine details.
 
-2. Objectives
+**2. Objectives**
 
 Implement a custom image corruption pipeline
 
